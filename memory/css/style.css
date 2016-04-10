@@ -1,0 +1,28 @@
+body{
+	position:relative;
+	margin:auto;
+}
+
+.option {
+	text-align:center;
+	
+}
+
+#score{
+	background-color:black;
+	text-align:center;
+	font-size : 35px;
+	color:#4CFF00;
+	height:40px;
+}
+
+.jeu {
+	text-align:center;
+}
+
+button{
+	background-color: #AAAAAA;
+	height:50px;
+	margin-top:-20px;
+	margin-bottom:10px;
+}
