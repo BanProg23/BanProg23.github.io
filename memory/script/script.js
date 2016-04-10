@@ -3,6 +3,12 @@ aClick = false;
 //faux tant qu'une partie n'est pas séléctionnée
 var debutPartie = false;
 $(document).ready(function(){
+	
+	//variables nécessaire au clic d'une carte
+	var $carteTemp1;
+	var $carteTemp2;
+	var nbClick = 0;
+	
 	//au clique d'un des modes d'une partie (réinistialisation des cartes)
 	$('button').click(function(){
 		aClick = true;
@@ -10,6 +16,7 @@ $(document).ready(function(){
 		$('.jeu img').removeAttr('disabled');
 		debutPartie = true;
 		$('#score').text(0);
+		nbClick=0;
 	});
 
 	//au clic d'une partie normale (mélange des cartes)
@@ -39,11 +46,6 @@ $(document).ready(function(){
 			j++;
 		});
 	});
-	
-	//variables nécessaire au clic d'une carte
-	var $carteTemp1;
-	var $carteTemp2;
-	var nbClick = 0;
 	
 	//au clic d'une carte, lancement des différentes options d'action
 	$(".jeu img").click(function(){
